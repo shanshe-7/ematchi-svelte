@@ -11,6 +11,11 @@
   let b = -1;
 
   let resetTimeout: number;
+
+  $: if (!grid.length) {
+    a = -1;
+    b = -1;
+  }
 </script>
 
 <div class="grid">
@@ -37,7 +42,7 @@
         }
       }}
       {emoji}
-      selected={!!grid.length && (a === i || b === i)}
+      selected={a === i || b === i}
       found={found.includes(emoji)}
       group={grid.indexOf(emoji) === i ? "a" : "b"}
     />
