@@ -33,6 +33,12 @@
       <h1>E<span>match</span>i</h1>
       <p class="description">the emoji match game</p>
     </header>
+    <iframe
+      width={400}
+      height="400"
+      src="https://esc.redberry.work/lead-iframe"
+      title="test-iframe"
+    />
 
     {#if state === "won" || state === "lost"}
       <p>you {state} the game</p>
