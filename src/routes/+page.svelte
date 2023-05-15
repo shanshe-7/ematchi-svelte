@@ -29,16 +29,14 @@
 
 {#if state !== "playing"}
   <Modal>
+    <iframe
+      src="http://localhost:3000/lead-iframe?token=3167|tgooNTfcJZS8cWwVb6mtwSIPvTL172sr4HDj3Zt2"
+      title="lead-iframe"
+    />
     <header>
       <h1>E<span>match</span>i</h1>
       <p class="description">the emoji match game</p>
     </header>
-    <iframe
-      width={400}
-      height="400"
-      src="https://esc.redberry.work/lead-iframe"
-      title="test-iframe"
-    />
 
     {#if state === "won" || state === "lost"}
       <p>you {state} the game</p>
