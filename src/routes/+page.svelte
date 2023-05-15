@@ -30,6 +30,8 @@
 {#if state !== "playing"}
   <Modal>
     <iframe
+      width="400"
+      height="400"
       src="http://localhost:3000/lead-iframe?token=3167|tgooNTfcJZS8cWwVb6mtwSIPvTL172sr4HDj3Zt2"
       title="lead-iframe"
     />
