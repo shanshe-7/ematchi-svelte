@@ -29,12 +29,26 @@
 
 {#if state !== "playing"}
   <Modal>
-    <iframe
-      width="400"
-      height="400"
-      src="https://esc.redberry.work/lead-iframe?token=3167|tgooNTfcJZS8cWwVb6mtwSIPvTL172sr4HDj3Zt2"
-      title="lead-iframe"
-    />
+    <div style="display:flex; gap: 20px">
+      <div>
+        <p>testing</p>
+        <iframe
+          width="400"
+          height="400"
+          src="https://esc.redberry.work/lead-iframe?token=3167|tgooNTfcJZS8cWwVb6mtwSIPvTL172sr4HDj3Zt2"
+          title="lead-iframe"
+        />
+      </div>
+      <div>
+        <p>staging</p>
+        <iframe
+          width="400"
+          height="400"
+          src="https://esc-staging.redberry.work/lead-iframe?token=619|hg4YIiXH1Xi5RJROUWydaGAMUCoRaZawQC3riQEx"
+          title="lead-iframe"
+        />
+      </div>
+    </div>
     <header>
       <h1>E<span>match</span>i</h1>
       <p class="description">the emoji match game</p>
